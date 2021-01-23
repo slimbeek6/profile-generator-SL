@@ -9,7 +9,7 @@ class Intern extends Employee {
         const role = "Intern";
         const ID = counta;
 
-        super (nameInt, email, role, ID);
+        super (nameInt, ID, email, role);
         this.school = schoolInt;
     }
 

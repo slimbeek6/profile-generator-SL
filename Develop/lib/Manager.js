@@ -9,7 +9,7 @@ class Manager extends Employee {
         const role = "Manager";
         const ID = counta;
 
-        super (nameInt, email, role, ID);
+        super (nameInt, ID, email, role);
         this.officeNumber = offNum;
     }
 
