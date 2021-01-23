@@ -21,6 +21,10 @@ class Employee {
     }
 
     getRole() {
+        if (!this.role) {
+            this.role = "Employee";
+        }
+
         return this.role;
     }
 }
