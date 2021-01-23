@@ -3,10 +3,10 @@
 class Employee {
     constructor (name, email, role, ID) {
         this.name = name;
-        this.ID = 1;
+        this.ID = ID;
         this.email = email;
         this.role = role;
-        this.count = count;
+        
     }
 
 
