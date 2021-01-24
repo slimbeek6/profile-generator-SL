@@ -56,7 +56,12 @@ function askTeam() {
                 setIntern();
             }
             else {
-                render();
+                fs.writeFile(outputPath, render(employees), (err) =>{
+                    if (err) {
+                     throw err
+                    }
+                    console.log("HTML created");
+                });
                 return;
             }
         });
@@ -113,7 +118,7 @@ function setIntern()  {
         {
             type: "input",
             name: "ID",
-            message: "What is this intern's id?"
+            message: "What is this intern's id?",
         },
         {
             type: "email",
@@ -170,7 +175,7 @@ function setEngineer () {
         var engGit = data.github;     
         var engg = new Engineer(name, engId, engEmail, engGit);
         employees.push(engg);
-        console.log(employees);
+        // console.log(employees);
         askTeam();
     });
     
@@ -179,3 +184,4 @@ function setEngineer () {
 App();
 
 module.exports = App;
+module.exports = {employees};
