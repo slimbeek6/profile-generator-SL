@@ -20,9 +20,17 @@
  
  <hr>
 
-## Image of Output
+## Image of Output and Video Walkthrough
+
+Output Image:
 
 ![Picture of Website](./Assets/pic-of-site.png)
+
+
+[Video of Walkthrough](https://youtu.be/HyME7AfkCVg)
+
+[Video of Output](https://youtu.be/LiZNDOZle2o)
+
 
 ## Licenses 
  This was built using code developed by: [MIT](https://opensource.org/licenses/MIT)<hr> 
